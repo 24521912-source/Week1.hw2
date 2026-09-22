@@ -1,21 +1,854 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Blog</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Nguyễn Thị Cẩm Tú 🚀</h1>
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+        <nav class="navbar">
 
-        <p>
-            This is my first static website.
-        </p>
+            <a href="#home" class="logo">
+                <span>N</span>Blog.
+            </a>
 
-    </div>
+            <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
 
+            <a href="#contact" class="nav-btn">
+                Liên hệ
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-decoration decoration-1"></div>
+        <div class="hero-decoration decoration-2"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <div class="small-title">
+                    <span></span>
+                    PERSONAL BLOG & PORTFOLIO
+                </div>
+
+                <h1>
+                    Xin chào, mình là
+                    <span class="gradient-text">Tên của bạn</span>
+                </h1>
+
+                <h2>
+                    Student • Developer • Technology Lover
+                </h2>
+
+                <p>
+                    Chào mừng bạn đến với blog cá nhân của mình.
+                    Đây là nơi mình chia sẻ những kiến thức về lập trình,
+                    công nghệ, học tập và những dự án mà mình đã thực hiện.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#about" class="btn btn-primary">
+                        Khám phá thêm
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fa-solid fa-code"></i>
+                        Xem dự án
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+                <div class="social-links">
+
+                    <a href="#" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" title="Github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE CARD -->
+            <div class="hero-image">
+
+                <div class="profile-card">
+
+                    <div class="status">
+                        <span></span>
+                        Available
+                    </div>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=700&q=80"
+                        alt="Ảnh đại diện">
+
+                    <div class="profile-info">
+                        <h3>Tên của bạn</h3>
+                        <p>Information Technology Student</p>
+                    </div>
+
+                    <div class="mini-tags">
+                        <span>Developer</span>
+                        <span>AI</span>
+                        <span>Data</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+
+        <div class="container stats-container">
+
+            <div class="stat-box">
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+                    <h3>15+</h3>
+                    <p>Projects</p>
+                </div>
+            </div>
+
+
+            <div class="stat-box">
+                <i class="fa-solid fa-book-open"></i>
+
+                <div>
+                    <h3>20+</h3>
+                    <p>Blog Posts</p>
+                </div>
+            </div>
+
+
+            <div class="stat-box">
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <div>
+                    <h3>5+</h3>
+                    <p>Technologies</p>
+                </div>
+            </div>
+
+
+            <div class="stat-box">
+                <i class="fa-solid fa-mug-hot"></i>
+
+                <div>
+                    <h3>∞</h3>
+                    <p>Cups of Coffee</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-subtitle">
+                    ABOUT ME
+                </span>
+
+                <h2>
+                    Một chút về
+                    <span>mình</span>
+                </h2>
+
+                <p>
+                    Một vài thông tin để bạn hiểu hơn về mình và những gì mình đang theo đuổi.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <!-- LEFT -->
+                <div class="about-card main-about">
+
+                    <div class="about-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Xin chào! 👋</h3>
+
+                    <p>
+                        Mình hiện đang là sinh viên yêu thích công nghệ,
+                        lập trình và trí tuệ nhân tạo.
+                    </p>
+
+                    <p>
+                        Mục tiêu của mình là xây dựng những sản phẩm
+                        có tính ứng dụng thực tế, đồng thời không ngừng
+                        học hỏi các công nghệ mới.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Kết nối với mình
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- RIGHT -->
+                <div class="about-small-grid">
+
+                    <div class="info-card">
+                        <div class="info-icon purple">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h4>Education</h4>
+                        <p>Sinh viên Công nghệ thông tin</p>
+                    </div>
+
+
+                    <div class="info-card">
+                        <div class="info-icon blue">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <h4>Location</h4>
+                        <p>Việt Nam 🇻🇳</p>
+                    </div>
+
+
+                    <div class="info-card">
+                        <div class="info-icon green">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <h4>Interests</h4>
+                        <p>AI, Web, Data Science</p>
+                    </div>
+
+
+                    <div class="info-card">
+                        <div class="info-icon orange">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+
+                        <h4>Goal</h4>
+                        <p>Become a great developer</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section skills-section" id="skills">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-subtitle">MY SKILLS</span>
+
+                <h2>
+                    Những công nghệ
+                    <span>mình sử dụng</span>
+                </h2>
+
+                <p>
+                    Một số ngôn ngữ và công nghệ mình đang học và làm việc cùng.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <div class="skill-logo html">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+
+                    <h3>HTML5</h3>
+
+                    <p>Xây dựng cấu trúc website.</p>
+
+                    <div class="progress">
+                        <div class="progress-bar width-90"></div>
+                    </div>
+
+                    <span class="percent">90%</span>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-logo css">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+
+                    <h3>CSS3</h3>
+
+                    <p>Thiết kế giao diện responsive.</p>
+
+                    <div class="progress">
+                        <div class="progress-bar width-85"></div>
+                    </div>
+
+                    <span class="percent">85%</span>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-logo js">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>Xây dựng tính năng tương tác.</p>
+
+                    <div class="progress">
+                        <div class="progress-bar width-75"></div>
+                    </div>
+
+                    <span class="percent">75%</span>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-logo python">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>Data Science & Machine Learning.</p>
+
+                    <div class="progress">
+                        <div class="progress-bar width-80"></div>
+                    </div>
+
+                    <span class="percent">80%</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECT ================= -->
+    <section class="section" id="projects">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-subtitle">
+                    MY PROJECTS
+                </span>
+
+                <h2>
+                    Những dự án
+                    <span>nổi bật</span>
+                </h2>
+
+                <p>
+                    Một số dự án cá nhân mà mình đã và đang phát triển.
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80"
+                            alt="Project">
+
+                        <span class="project-label">
+                            Web Development
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>University Website</h3>
+
+                        <p>
+                            Website hỗ trợ người dùng tìm kiếm và khám phá
+                            thông tin về các trường đại học.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </a>
+
+                            <a href="#">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+                            alt="Project">
+
+                        <span class="project-label">
+                            Artificial Intelligence
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>AI Recommendation System</h3>
+
+                        <p>
+                            Hệ thống sử dụng AI để phân tích dữ liệu
+                            và đưa ra các gợi ý phù hợp với người dùng.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Machine Learning</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </a>
+
+                            <a href="#">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80"
+                            alt="Project">
+
+                        <span class="project-label">
+                            Data Science
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Data Analysis Dashboard</h3>
+
+                        <p>
+                            Phân tích dữ liệu và trực quan hóa các chỉ số
+                            quan trọng thông qua dashboard.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Data</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </a>
+
+                            <a href="#">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BLOG ================= -->
+    <section class="section blog-section" id="blog">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-subtitle">
+                    MY BLOG
+                </span>
+
+                <h2>
+                    Bài viết
+                    <span>mới nhất</span>
+                </h2>
+
+                <p>
+                    Những điều mình học được về công nghệ, lập trình và cuộc sống.
+                </p>
+
+            </div>
+
+
+            <div class="blog-grid">
+
+
+                <article class="blog-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+                        alt="Blog">
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                20/09/2026
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                5 phút đọc
+                            </span>
+                        </div>
+
+                        <h3>
+                            Hành trình bắt đầu học lập trình Web
+                        </h3>
+
+                        <p>
+                            Những điều cơ bản mà người mới nên biết khi
+                            bắt đầu với HTML, CSS và JavaScript.
+                        </p>
+
+                        <a href="#">
+                            Đọc bài viết
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1000&q=80"
+                        alt="Blog">
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                15/09/2026
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                7 phút đọc
+                            </span>
+                        </div>
+
+                        <h3>
+                            Machine Learning dành cho người mới
+                        </h3>
+
+                        <p>
+                            Tổng quan về Machine Learning và cách
+                            bắt đầu xây dựng mô hình đầu tiên.
+                        </p>
+
+                        <a href="#">
+                            Đọc bài viết
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1000&q=80"
+                        alt="Blog">
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                10/09/2026
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                4 phút đọc
+                            </span>
+                        </div>
+
+                        <h3>
+                            5 công cụ hữu ích dành cho sinh viên IT
+                        </h3>
+
+                        <p>
+                            Những công cụ giúp việc học code,
+                            quản lý source và phát triển dự án hiệu quả hơn.
+                        </p>
+
+                        <a href="#">
+                            Đọc bài viết
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact-section" id="contact">
+
+        <div class="container contact-box">
+
+            <div class="contact-content">
+
+                <span class="section-subtitle">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Hãy cùng nhau tạo ra
+                    <span>điều thú vị!</span>
+                </h2>
+
+                <p>
+                    Nếu bạn muốn trao đổi về lập trình, công nghệ,
+                    dự án hoặc đơn giản chỉ muốn làm quen,
+                    hãy liên hệ với mình.
+                </p>
+
+                <a href="mailto:yourname@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i>
+                    Gửi Email
+                </a>
+
+            </div>
+
+
+            <div class="contact-cards">
+
+                <div class="contact-item">
+
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <section>
+                        <small>Email</small>
+                        <p>yourname@gmail.com</p>
+                    </section>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <section>
+                        <small>Phone</small>
+                        <p>0123 456 789</p>
+                    </section>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <section>
+                        <small>Location</small>
+                        <p>Vietnam</p>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="container footer-container">
+
+            <a href="#home" class="logo">
+                <span>N</span>Blog.
+            </a>
+
+            <p>
+                © 2026 Personal Blog. Made with ❤️ and ☕
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
